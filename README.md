@@ -4,9 +4,9 @@
 ## News
 
 
-- 28/04/2023. Preprint is online.
-- 24/04/2023. Drafting the preprint.
-- 22/04/2023. Experiments starts.
+- 28/04/2023: Preprint is online.
+- 24/04/2023: Drafting the preprint.
+- 22/04/2023: Experiments started.
 
 
 ## Paper
