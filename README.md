@@ -62,7 +62,9 @@ You can use it to evaluate any generated code snippet, with the inputs of `probl
 ```python
 from llm_code_eval import evaluate
 
-score = evaluate(problem="Given a list of integers, return the sum of all the integers.", output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", task="code-gen", aspect="usefulness", model="gpt-3.5-turbo")
+score = evaluate(problem="Given a list of integers, return the sum of all the integers.", 
+                    output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", 
+                    task="code-gen", aspect="usefulness", model="gpt-3.5-turbo")
 
 print(score)
 ```
@@ -71,7 +73,10 @@ If you want to evaluate with reference code, you can use the option of `referenc
 ```python
 from llm_code_eval import evaluate
 
-score = evaluate(problem="Given a list of integers, return the sum of all the integers.", output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", reference="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", task="code-gen", aspect="usefulness", model="gpt-3.5-turbo")
+score = evaluate(problem="Given a list of integers, return the sum of all the integers.", 
+                output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", 
+                reference="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", 
+                task="code-gen", aspect="usefulness", model="gpt-3.5-turbo")
 
 print(score)
 ```
@@ -81,7 +86,9 @@ You can also use the option of `cot=True` to enable the zero-shot chain-of-thoug
 ```python
 from llm_code_eval import evaluate
 
-score, eval_step = evaluate(problem="Given a list of integers, return the sum of all the integers.", output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", task="code-gen", aspect="usefulness", model="gpt-3.5-turbo", cot=True)
+score, eval_step = evaluate(problem="Given a list of integers, return the sum of all the integers.", 
+                            output="sum = 0\nfor i in range(len(list)):\n\tsum += list[i]\nreturn sum", 
+                            task="code-gen", aspect="usefulness", model="gpt-3.5-turbo", cot=True)
 
 print(score)
 print(eval_step)
