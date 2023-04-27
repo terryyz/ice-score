@@ -107,7 +107,7 @@ We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http
 ## Citation
 ```
 @article{zhuo2023large,
-  title={Large Language Models Are State-of-the-art Evaluators Of Code Generation},
+  title={Large Language Models Are State-of-the-Art Evaluators Of Code Generation},
   author={Zhuo, Terry Yue},
   journal={arXiv preprint arXiv:2304},
   year={2023}
