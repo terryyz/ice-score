@@ -102,7 +102,7 @@ We welcome any contributions to this project. Please feel free to open an issue 
 
 ## To Do
 - [ ] Evaluate more large language models
-- [ ] Extend the evaluate aspects and tasks
+- [ ] Extend the evaluation aspects and tasks
 
 ## Acknowledgement
 We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http://www.cs.cmu.edu/~neulab/) for their open-source code and data.
