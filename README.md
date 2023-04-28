@@ -1,4 +1,4 @@
-# Large Language Models Are State-of-the-Art Evaluators Of Code Generation
+# Large Language Models Are State-of-the-Art Evaluators of Code Generation
 
 
 ## News
