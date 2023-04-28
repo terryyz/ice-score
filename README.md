@@ -10,7 +10,7 @@
 
 
 ## Paper
-[Original Version](assets/paper.pdf)
+[ArXiv](https://arxiv.org/abs/2304.14317) and [Original Version](assets/paper.pdf)
 
 
 ## Abstract
@@ -100,6 +100,10 @@ The MVP requires a lot of improvements in terms of the design, and the diversity
 We welcome any contributions to this project. Please feel free to open an issue or submit a pull request.
 
 
+## To Do
+- [] Evaluate more large language models
+- [] Extend the evaluate aspects and tasks
+
 ## Acknowledgement
 We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http://www.cs.cmu.edu/~neulab/) for their open-source code and data.
 
@@ -109,7 +113,7 @@ We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http
 @article{zhuo2023large,
   title={Large Language Models Are State-of-the-Art Evaluators Of Code Generation},
   author={Zhuo, Terry Yue},
-  journal={arXiv preprint arXiv:2304},
+  journal={arXiv preprint arXiv:2304.14317},
   year={2023}
 }
 ```
