@@ -28,14 +28,14 @@ class EndOfFunctionCriteria(StoppingCriteria):
 
 def create_model_config(
     message: str,
-    max_length: int=1024,
+    max_new_tokens: int=1024,
     temperature: float = 0.2,
     top_p: float = 0.95,
     repetition_penalt: float = 1.2
 ) -> Dict:
     config = {
             "message": message,
-            "max_length": max_length,
+            "max_new_tokens": max_new_tokens,
             "temperature": temperature,
             "top_p": top_p,
             "repetition_penalty": repetition_penalt,
@@ -47,11 +47,12 @@ def request_model_engine(
     model,
     config: Dict
 ):
-    prompt_tokenized = tokenizer(config["message"], return_tensors="pt")
-    input_ids = prompt_tokenized["input_ids"]
+    message = config.pop("message")
+    prompt_tokenized = tokenizer(message, return_tensors="pt")
+    input_ids = prompt_tokenized["input_ids"].to('cuda')
     token_len = input_ids.shape[1]
 
-    stop_words=["<|user|>", "<|end|>"]
+    stop_words=["<|user|>", "<|end|>", "### End"]
     stopping_criteria = StoppingCriteriaList([EndOfFunctionCriteria(token_len, stop_words, tokenizer)])
     outputs = model.generate(
                             input_ids,

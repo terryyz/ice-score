@@ -2,7 +2,7 @@ NA_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Naturalness: measuring documentation with the features of natural languages: evaluate the grammaticality and fluency of generated documentation, ignoring contents
 
@@ -16,7 +16,7 @@ EX_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Expressiveness: measuring documentation with the features of natural languages: evaluate the documentation's readability and understandability in the respect of their way of description, ignoring contents
 
@@ -30,7 +30,7 @@ CA_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Content Adequacy: evaluating the generated documentation on contents: measure the amount of contents carried over from the input to the NL documentation, ignoring fluency in language.
 
@@ -44,7 +44,7 @@ CON_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Conciseness: evaluating the generated documentation on contents: measure to what extent the documentation contains the unnecessary information.
 
@@ -58,7 +58,7 @@ USE_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Usefulness: measure to what extent the generated documentation is useful for developers to understand code. 
 
@@ -72,7 +72,7 @@ CU_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Code understandability: evaluate to what degree does the generated documentation help developers understand the programs.
 
@@ -86,7 +86,7 @@ NEC_PROMPT = """\
 Descriptions
 Scores: 1-5 (from bad to good)
 
-The human evaluation criterions are shown as follows:
+The evaluation criterions are shown as follows:
 
 Usefulness: measure to what extent the generated documentation are necessary.
 

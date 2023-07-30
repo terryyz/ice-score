@@ -10,12 +10,7 @@ You will read a batch of examples, which are composed of the following:
 3. Output (a), the first output from the AI system
 4. Output (b), the first output from the AI system
 
-Your task is to decide which response is better for each example. There are several dimensions that you can think along. Consider the following questions:
-
-1. Is the response helpful? For example, if the instruction asked for a recipe for healthy food, and the response is a useful recipe, then we can consider it helpful.
-2. Is the response language natural? For example, AI responses often have repetitions, which is not natural.
-3. Is the response factual/accurate? For example, AI responses often make up new information. For example, if the response claims that Donald Trump is the current U.S. president, then you should consider it inaccurate.
-4. and so on ... ultimately, you should decide which response is better based on your judgment and based on your own preference.
+Your task is to decide which response is better for each example.
 
 You should answer using only {"a": SCORE_0, "b": SCORE_1} depending on which response is better.
 
@@ -27,7 +22,9 @@ Input Brief Instruction To be Formalized:
 """
 
 NL2C_EXAMPLE_PROMPT = """
-## Input:
+## New Evaluation
+
+## Problem Input:
 send a signal `signal.SIGUSR1` to the current process
 
 ### Output "0":
@@ -54,6 +51,10 @@ os.kill(os.getpid(), signal.SIGUSR1)
 
 ### Scores (scores only):
 {"0": 0, "1": 4, "2": 1, "3": 0, "4": 3}
+
+## End Evaluation
+
+## New Evaluation
 """
 
 C2NL_EXAMPLE_PROMPT = """
@@ -63,7 +64,7 @@ C2C_EXAMPLE_PROMPT = """
 """
 
 INPUT_PROMPT = """
-### Input:
+## Problem Input:
 
 {raw_input}
 """
@@ -71,7 +72,7 @@ INPUT_PROMPT = """
 MODEL_OUT_PROMPT = """
 ### Index \"{raw_index}\" Output:
 
-{raw_input}
+{raw_output}
 """
 
 SCORES_REASON_PROMPT = """

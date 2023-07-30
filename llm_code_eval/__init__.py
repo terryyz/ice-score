@@ -1,1 +1,1 @@
-from .evaluator import evaluate
+from .evaluator import ICE
