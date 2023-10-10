@@ -93,16 +93,6 @@ score, eval_step = evaluate(problem="Given a list of integers, return the sum of
 print(score)
 print(eval_step)
 ```
-## Call For Contributions
-The MVP requires a lot of improvements in terms of the design, and the diversity of the evaluation tasks (with the proper prompts).
-
-
-We welcome any contributions to this project. Please feel free to open an issue or submit a pull request.
-
-
-## To Do
-- [ ] Evaluate more large language models
-- [ ] Extend the evaluation aspects and tasks
 
 ## Acknowledgement
 We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http://www.cs.cmu.edu/~neulab/) for their open-source code and data.
