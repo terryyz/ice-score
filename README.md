@@ -1,12 +1,4 @@
-# ICE-Score: Instructing Large Language Models for Code Evaluation
-
-## Overview
-
-
-![framework](assets/framework.png)
-Our framework assesses code generation from two aspects:
-- **Human-based Usefulness**: Usefulness of the code snippet based on the problem description.
-- **Execution-based Functional Correctness**: Execution-based quality of the code snippet combined with the problem.
+# ICE-Score: Instructing Large Language Models to Evaluate Code
 
 
 ## Environment Setup
@@ -31,11 +23,11 @@ pip install -r requirements.txt
 - `experiment_source/` contains the scripts to collect all automatic evaluation results. They require specific modifications to run on your machine. Note that for any of these scripts using `metrics_evaluation.metrics`, you need to use the implementations in `metrics_evaluation` folder from [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics).
 
 
-- `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluation any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` or more details.
+- `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluate any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` for more details.
 
 
 ## Use Large Language Models To Evaluate Downstream Tasks Of Source Code
-We implement a minimum viable product (MVP) of this project. To install the project, please use the following command:
+We implement a minimum viable product (MVP) for this project. To install the project, please use the following command:
 ```bash
 pip install -e .
 ```
