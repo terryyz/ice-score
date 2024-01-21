@@ -1,5 +1,13 @@
 # ICE-Score: Instructing Large Language Models to Evaluate Code
 
+_**January 2024**_ - ICE-Score has been accepted to EACL 2024 🎉🎉🎉
+
+---
+* [Environment Setup](#environment-setup)
+* [Folder Description](#folder-description)
+* [Usage](#usage)
+* [Citation](#citation)
+* [Acknowledgement](#acknowledgement)
 
 ## Environment Setup
 Our experiment is mainly built on the [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics) and [code-bert-score](https://github.com/neulab/code-bert-score) repositories. To replicate all experiments, please follow their instructions to set up the environment.
@@ -26,7 +34,7 @@ pip install -r requirements.txt
 - `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluate any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` for more details.
 
 
-## Use Large Language Models To Evaluate Downstream Tasks Of Source Code
+## Usage
 We implement a minimum viable product (MVP) for this project. To install the project, please use the following command:
 ```bash
 pip install -e .
@@ -65,6 +73,10 @@ score, eval_step = evaluate(problem="Given a list of integers, return the sum of
 
 print(score)
 print(eval_step)
+```
+
+## Citation
+```
 ```
 
 ## Acknowledgement
