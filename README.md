@@ -1,31 +1,4 @@
-# Large Language Models Are State-of-the-Art Evaluators of Code Generation
-
-
-## News
-
-
-- 28/04/2023: Preprint is online.
-- 24/04/2023: Drafting the preprint.
-- 22/04/2023: Experiments started.
-
-
-## Paper
-[ArXiv](https://arxiv.org/abs/2304.14317) and [Original Version](assets/paper.pdf)
-
-
-## Abstract
-
-
-Recent advancements in the field of natural language generation have facilitated the use of large language models to assess the quality of generated text. Although these models have shown promising results in tasks such as machine translation and summarization, their applicability in code generation tasks remains limited without human involvement. The complexity of programming concepts required for such tasks makes it difficult to develop evaluation metrics that align with human judgment. Token-matching-based metrics, such as BLEU, have demonstrated weak correlations with human practitioners in code generation tasks. Moreover, the utilization of human-written test suites to evaluate functional correctness can be challenging in domains with low resources. To overcome these obstacles, we propose a new evaluation framework based on the GPT-3.5 (`GPT-3.5-turbo`), for code generation assessments. Our framework addresses the limitations of existing approaches by achieving superior correlations with functional correctness and human preferences, without the need for test oracles or references. We evaluate the efficacy of our framework on two different tasks and four programming languages, comparing its performance with the state-of-the-art CodeBERTScore metric, which relies on a pre-trained model. Our results demonstrate that our framework surpasses CodeBERTScore, delivering high levels of accuracy and consistency across various programming languages and tasks. We encourage further research in the evaluation of code generation.
-
-
-## Overview
-
-
-![framework](assets/framework.png)
-Our framework assesses code generation from two aspects:
-- **Human-based Usefulness**: Usefulness of the code snippet based on the problem description.
-- **Execution-based Functional Correctness**: Execution-based quality of the code snippet combined with the problem.
+# ICE-Score: Instructing Large Language Models to Evaluate Code
 
 
 ## Environment Setup
@@ -50,11 +23,11 @@ pip install -r requirements.txt
 - `experiment_source/` contains the scripts to collect all automatic evaluation results. They require specific modifications to run on your machine. Note that for any of these scripts using `metrics_evaluation.metrics`, you need to use the implementations in `metrics_evaluation` folder from [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics).
 
 
-- `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluation any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` or more details.
+- `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluate any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` for more details.
 
 
 ## Use Large Language Models To Evaluate Downstream Tasks Of Source Code
-We implement a minimum viable product (MVP) of this project. To install the project, please use the following command:
+We implement a minimum viable product (MVP) for this project. To install the project, please use the following command:
 ```bash
 pip install -e .
 ```
@@ -93,27 +66,6 @@ score, eval_step = evaluate(problem="Given a list of integers, return the sum of
 print(score)
 print(eval_step)
 ```
-## Call For Contributions
-The MVP requires a lot of improvements in terms of the design, and the diversity of the evaluation tasks (with the proper prompts).
-
-
-We welcome any contributions to this project. Please feel free to open an issue or submit a pull request.
-
-
-## To Do
-- [ ] Evaluate more large language models
-- [ ] Extend the evaluation aspects and tasks
 
 ## Acknowledgement
 We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http://www.cs.cmu.edu/~neulab/) for their open-source code and data.
-
-
-## Citation
-```
-@article{zhuo2023large,
-  title={Large Language Models Are State-of-the-Art Evaluators of Code Generation},
-  author={Zhuo, Terry Yue},
-  journal={arXiv preprint arXiv:2304.14317},
-  year={2023}
-}
-```
