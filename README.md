@@ -3,11 +3,15 @@
 _**January 2024**_ - ICE-Score has been accepted to EACL 2024 🎉🎉🎉
 
 ---
+* [Example](#example)
 * [Environment Setup](#environment-setup)
 * [Folder Description](#folder-description)
 * [Usage](#usage)
 * [Citation](#citation)
 * [Acknowledgement](#acknowledgement)
+
+## Example
+![](./assets/ice-score.png "Example")
 
 ## Environment Setup
 Our experiment is mainly built on the [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics) and [code-bert-score](https://github.com/neulab/code-bert-score) repositories. To replicate all experiments, please follow their instructions to set up the environment.
