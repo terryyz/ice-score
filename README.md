@@ -81,6 +81,14 @@ print(eval_step)
 
 ## Citation
 ```
+@inproceedings{
+zhuo2024icescore,
+title={{ICE}-Score: Instructing Large Language Models to Evaluate Code},
+author={Terry Yue Zhuo},
+booktitle={18th Conference of the European Chapter of the Association for Computational Linguistics},
+year={2024},
+url={https://openreview.net/forum?id=KQ7WB1snxB}
+}
 ```
 
 ## Acknowledgement
