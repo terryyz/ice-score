@@ -81,13 +81,12 @@ print(eval_step)
 
 ## Citation
 ```
-@inproceedings{
-zhuo2024icescore,
-title={{ICE}-Score: Instructing Large Language Models to Evaluate Code},
-author={Terry Yue Zhuo},
-booktitle={18th Conference of the European Chapter of the Association for Computational Linguistics},
-year={2024},
-url={https://openreview.net/forum?id=KQ7WB1snxB}
+@inproceedings{zhuo2024ice,
+  title={ICE-Score: Instructing Large Language Models to Evaluate Code},
+  author={Zhuo, Terry Yue},
+  booktitle={Findings of the Association for Computational Linguistics: EACL 2024},
+  pages={2232--2242},
+  year={2024}
 }
 ```
 
